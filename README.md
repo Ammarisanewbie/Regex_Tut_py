@@ -77,7 +77,7 @@ re.findall(pattern,devices)
 
 ## Key Notes
 - Match what you wish to search for with the position too, it's like matching or looking out for the pattern game.
-- Noticed in [Example 2](####Example-2:-Find-devices-beginning-with-'r15')
+- Noticed in [Example 2](#Example-2:-Find-devices-beginning-with-'r15')
 
 
 
