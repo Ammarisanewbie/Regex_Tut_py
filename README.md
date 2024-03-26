@@ -45,8 +45,14 @@ import re
    - specify a range within the {} brackets by separating two numbers(1st: min reps, max reps) with a comma
     eg ("\d{2}", "h32rb17 k825t0m c2994eh") > ['32', '17', '82', '29', '94']
 
-4. `{x,y}`: range
+4. {x,y}: range
   - x: min number, y: max number of repetitions 
   - `("\d{1,3}", "h32rb17 k825t0m c2994eh")` : ['32', '17', '825', '0', '299', '4']
+
+## 4. Basic Regex Functions
+`re.findall(1st, 2nd)`
+ - returns a list of matches to a regex
+ - takes in 2 parameters (1st: string containing the regex pattern, 2nd: string that you're searching through)
+ - *include `r` or `\` to bypass the escape sequence `(r"\w")`
 
 
