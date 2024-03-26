@@ -22,7 +22,7 @@ To use Regex and its functions, we need to import the `re` library
 import re
 ```
 
-## 2.Symbols for Character types
+## 2. Symbols for Character types
 1. '\w' : matches with any alphanumeric char only. (includes '_',underscore) 
     eg: user1@email1.com = \w+@\w+\.\w+ ->typical email Regex
 
@@ -34,7 +34,7 @@ import re
 
 5. '\.' : matches to the period char (.)
 
-## 3.Symbols to Quantify Occurrences
+## 3. Symbols to Quantify Occurrences
 1. '+' : matches one or more of the following character
     eg ("\d+", "h32rb17") > ['32', '17']
 
@@ -49,7 +49,7 @@ import re
   - x: min number, y: max number of repetitions 
   - `("\d{1,3}", "h32rb17 k825t0m c2994eh")` : ['32', '17', '825', '0', '299', '4']
 
-## 4.Basic Regex Functions
+## 4. Basic Regex Functions
 `re.findall(1st, 2nd)`
  - returns a list of matches to a regex
  - takes in 2 parameters (1st: string containing the regex pattern, 2nd: string that you're searching through)
@@ -77,7 +77,16 @@ re.findall(pattern,devices)
 
 ## Key Notes
 - Match what you wish to search for with the position too, it's like matching or looking out for the pattern game.
-- Noticed in [Example 2](#example-2-find-devices-beginning-with-r15), we need to find devices beginning with 'r15', thus we beginning our search pattern with 'r15' followed by the respective paremeters. 
+- Noticed in [Example 2](#example-2-find-devices-beginning-with-r15), we need to find devices beginning with 'r15', thus we beginning our search pattern with 'r15' followed by the respective parameters. 
+
+## Conclusion
+Regex may be daunting at first, however, with some practice, you'll get the hang of forming patterns to help you in Log analysis, Email Filtering and much more!
+
+## Practice Questions
+1. Task 1: Look for devices IDs that begin with "r15" in devices.txt file. These characters indicate that the device is running an operating system that must be updated
+2. Task 2: Extract the valid IP addresses from the flagged IPs in Log_file.txt
+3. Task 3: Filter out flagged IPs and highlight them while giving clearance messages for those that are fine.
+
 
 
 
